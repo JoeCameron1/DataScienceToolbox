@@ -1,5 +1,10 @@
 # Author = Joseph Cameron
-# dataVis.py visualises data from the IDEAL dataset
+# dataVis.py
+# Visualises data from the IDEAL dataset
+# For every .csv file in a directory, a figure and a pickle file is saved in the subdirectories 'Figures\' and 'Pickles\'
+
+# USAGE
+# To visualise all .csv files in current directory = python dataVis.py
 
 # --------------------------------------------------
 # IMPORT STATEMENTS
