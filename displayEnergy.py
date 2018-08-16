@@ -85,7 +85,7 @@ ideal_data['Energy'] = ideal_data['Sensor Value_l'] + ideal_data['Sensor Value_r
 ideal_data = ideal_data[ideal_data["Energy"] > 0]
 # Secondly, remove readings that are unrealistically large, as this is also clearly due to sensor fault
 # Assume that only points within the top percentile are too large
-ideal_data = ideal_data[ideal_data["Energy"] < ideal_data["Energy"].quantile(0.99)]
+ideal_data = ideal_data[ideal_data["Energy"] < (ideal_data["Energy"].quantile(0.99) * 3)]
 
 # ----------------------------------------------------------------------
 
