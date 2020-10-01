@@ -1,9 +1,9 @@
 # Author = Joseph Cameron
-# preprocessElectric.py
-# Saves electric csv data in Watt Hours instead of Watts.
+# preprocessElectric-30.py
+# Saves electric csv data in Watt Hours instead of Watts. 30 minute rounding.
 
 # USAGE
-# python preprocessElectric.py electricityData.csv
+# python preprocessElectric-30.py electricityData.csv
 
 # --------------------------------------------------
 
