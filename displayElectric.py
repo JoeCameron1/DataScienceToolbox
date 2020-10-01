@@ -1,8 +1,8 @@
 # Author = Joseph Cameron
-# display.py displays raw data from the IDEAL dataset
+# displayElectric.py displays raw electricity data from the IDEAL dataset
 
 # USAGE
-# python display.py data.csv
+# python displayElectric.py electricityData.csv
 
 # --------------------------------------------------
 
