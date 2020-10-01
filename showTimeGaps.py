@@ -1,6 +1,6 @@
 # Author = Joseph Cameron
 # showTimeGaps.py
-# Looks for large gaps in data collection, and reduces the size of aggregated spikes to result in a correct integration
+# Looks for time gaps in data collection, and produces a graph to show how many gaps of varying sizes occur within the dataset.
 
 # USAGE
 # python showTimeGaps.py gasData.csv
