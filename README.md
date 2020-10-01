@@ -33,10 +33,10 @@ Additionally, the table below quickly summarises the purpose and correct usage o
 | preprocessGas-30.py             | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. Rounded to the nearest 30 minutes. | python preprocessGas-30.py gasData.csv |
 | preprocessGas-Hour.py           | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. Rounded to the nearest hour. | python preprocessGas-Hour.py gasData.csv |
 | preprocessGas.py                | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. No rounding. | python preprocessGas.py gasData.csv |
-| seasonalAverage.py              |  |  |
-| showFig.py                      |  |  |
-| showTimeGaps.py                 |  |  |
-| smoothedDailyEnergyAverage.py   |  |  |
-| smoothedOverallEnergyAverage.py |  |  |
-| total-boxplot-consumption.py    |  |  |
-| total-robust-consumption.py     |  |  |
+| seasonalAverage.py              | Produces the average value for every hour/minute/second during the day, for each season (Winter, Spring, Summer, Autumn). Can also display and save figures showing the average values as a boxplot or line graph. Further ability to save pickles for later data retrieval. | python seasonalAverage.py [-d/-m/-s] [-b/-n] data.csv |
+| showFig.py                      | Shows a figure from data stored in a pickle file. The file is given as a command-line argument. | python showFig.py pickleFile.pkl |
+| showTimeGaps.py                 | Looks for time gaps within the data and produces a graph to show how many gaps of varying sizes occur within the dataset. | python showTimeGaps.py data.csv |
+| smoothedDailyEnergyAverage.py   | Same as dailyEnergyAverage.py, except this script also applies median smoothing to the data before visualisation. | python smoothedDailyEnergyAverage.py [-d/-m/-s] [-b/-n] data.csv |
+| smoothedOverallEnergyAverage.py | Same as overallEnergyAverage.py, except this script uses smoothed data from smoothedDailyEnergyAverage.py. | python smoothedOverallEnergyAverage.py [-b/-n] |
+| total-boxplot-consumption.py    | Displays a boxplot of energy consumption for every month grouped by hour, day and week. Takes either gas data or electricity data. | python total-boxplot-consumption.py [-d/-g/-w] data.csv |
+| total-robust-consumption.py     | Displays energy consumption sum for every hour, day, week and month. Takes gas and electricity data. | python total-robust-consumption.py [-d/-g/-w/-m] gasData.csv electricityData.csv |
