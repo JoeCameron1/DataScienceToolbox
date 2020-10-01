@@ -1,6 +1,6 @@
 # Author = Joseph Cameron
-# overallEnergyAverage.py
-# Gives average daily energy demand curves for all aggregated users
+# smoothedOverallEnergyAverage.py
+# Gives average daily energy demand curves for all aggregated users (smoothed data)
 
 # USAGE
 # Boxplot = python smoothedOverallEnergyAverage.py -b
