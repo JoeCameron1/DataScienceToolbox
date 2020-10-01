@@ -1,6 +1,6 @@
 # Author = Joseph Cameron
 # preprocessGas.py
-# Saves clean gas csv data
+# Saves clean gas csv data, with boiler efficiency and COP values accounted for.
 
 # USAGE
 # python preprocessGas.py gasData.csv
