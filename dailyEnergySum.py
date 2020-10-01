@@ -58,5 +58,5 @@ plt.show()
 # Saving Pickle for future interactivity in the 'Pickles' directory
 #pickle.dump(pickleVar, file('Pickles/' + sys.argv[1] + '_Figure.pickle','w'))
 
-# Save Figure in the 'Figures' directory
-#plt.savefig('GasFigures/' + sys.argv[1] + '_Figure.png', dpi=1000)
+# Save Figure in the 'EnergySumFigures' directory
+#plt.savefig('EnergySumFigures/' + sys.argv[1] + '_Figure.png', dpi=1000)
