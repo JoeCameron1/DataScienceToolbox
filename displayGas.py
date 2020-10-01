@@ -1,8 +1,8 @@
 # Author = Joseph Cameron
-# display.py displays raw data from the IDEAL dataset
+# displayGas.py displays raw gas data from the IDEAL dataset
 
 # USAGE
-# python display.py data.csv
+# python displayGas.py gasData.csv
 
 # --------------------------------------------------
 
