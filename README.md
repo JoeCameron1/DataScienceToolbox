@@ -24,8 +24,8 @@ Additionally, the table below quickly summarises the purpose and correct usage o
 | displayEnergy.py                | Saves and shows csv data and figures that show a user's total energy usage from gas and electricity data in 'EnergyCSV/' and 'EnergyFigures/' folders. | python displayEnergy.py gasData.csv electricityData.csv |
 | displayGas.py                   | Display raw gas data from the IDEAL dataset as a line graph. Can also save the graph in a 'GasFigures/' directory. | python displayGas.py gasData.csv |
 | formatCSV.py                    | Prints each and every raw IDEAL data .csv file within a directory as a string. | Navigate to directory with .csv files and type 'python formatCSV.py' |
-| monthlyEnergyAverage.py         |  |  |
-| monthlyOverallEnergyAverage.py  |  |  |
+| monthlyEnergyAverage.py         | Same as dailyEnergyAverage.py, except this script also saves the average values within the timeframe of each month (rather than the whole range of available datetime data) in a separate .csv file in a directory called 'MonthlyAveEnergyCSV/'. | python monthlyEnergyAverage.py [-d/-m/-s] [-b/-n] data.csv |
+| monthlyOverallEnergyAverage.py  | Same as monthlyEnergyAverage.py, except this script saves the average hourly values (for each month's timeframe) from all .csv files in a directory rather than just a single .csv file. | python monthlyOverallEnergyAverage.py [-b/-n] |
 | overallEnergyAverage.py         |  |  |
 | preprocessElectric-30.py        |  |  |
 | preprocessElectric-Hour.py      |  |  |
