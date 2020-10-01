@@ -1,6 +1,10 @@
 # Author = Joseph Cameron
 # showFig.py shows a figure of IDEAL data from a pickle file, given as a command-line argument
 
+# USAGE
+# python showFig.py pickleFile.pkl
+# NOTE: Make sure you are using this command-line instruction from within a directory that has a 'Pickles/' folder containing the desired pickle file.
+
 import matplotlib.pyplot as plt
 import pickle
 import sys
