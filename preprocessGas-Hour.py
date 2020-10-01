@@ -1,9 +1,9 @@
 # Author = Joseph Cameron
-# preprocessGas.py
-# Saves clean gas csv data
+# preprocessGas-Hour.py
+# Saves clean gas csv data, with bolier efficiency and COP values accounted for. Rounded to the nearest hour.
 
 # USAGE
-# python preprocessGas.py gasData.csv
+# python preprocessGas-Hour.py gasData.csv
 
 # --------------------------------------------------
 
