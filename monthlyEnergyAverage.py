@@ -1,10 +1,10 @@
 # Author = Joseph Cameron
-# dailyEnergyAverage.py
-# Presents the average daily energy demand for a single user
+# monthlyEnergyAverage.py
+# Presents the average hourly energy demand within the timeframe of each month for a single user.
 
 # USAGE
 # Hourly Average and Boxplot = python monthlyEnergyAverage.py -d -b data.csv
-# Also saves csv data of results
+# Also saves csv data of results if the boxplot (-b) and hourly (-d) arguments are chosen.
 
 # Note!!!!
 # All other argument combinations will only save figures and not .csv data
