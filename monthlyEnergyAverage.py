@@ -3,7 +3,12 @@
 # Presents the average hourly energy demand within the timeframe of each month for a single user.
 
 # USAGE
-# Hourly Average and Boxplot = python monthlyEnergyAverage.py -d -b data.csv
+# Hourly Boxplot = python dailyEnergyAverage.py -d -b data.csv
+# Hourly Line Graph = python dailyEnergyAverage.py -d -n data.csv
+# Boxplot for every minute = python dailyEnergyAverage.py -m -b data.csv
+# Line Graph for every minute = python dailyEnergyAverage.py -m -n data.csv
+# Boxplot for every second = python dailyEnergyAverage.py -s -b data.csv
+# Line Graph for every second = python dailyEnergyAverage.py -s -n data.csv
 # Also saves csv data of results if the boxplot (-b) and hourly (-d) arguments are chosen.
 
 # Note!!!!
