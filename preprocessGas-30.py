@@ -1,9 +1,9 @@
 # Author = Joseph Cameron
-# preprocessGas.py
-# Saves clean gas csv data
+# preprocessGas-30.py
+# Saves clean gas csv data, with boiler efficiency and COP values accounted for. 30 minute rounding.
 
 # USAGE
-# python preprocessGas.py gasData.csv
+# python preprocessGas-30.py gasData.csv
 
 # --------------------------------------------------
 
