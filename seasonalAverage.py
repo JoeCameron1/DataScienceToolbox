@@ -3,6 +3,12 @@
 
 # USAGE
 # python seasonalAverage.py [-d/-m/-s] [-b/-n] data.csv
+# Hourly Boxplot = python seasonalAverage.py -d -b data.csv
+# Hourly Line Graph = python seasonalAverage.py -d -n data.csv
+# Boxplot for every minute = python seasonalAverage.py -m -b data.csv
+# Line Graph for every minute = python seasonalAverage.py -m -n data.csv
+# Boxplot for every second = python seasonalAverage.py -s -b data.csv
+# Line Graph for every second = python seasonalAverage.py -s -n data.csv
 
 # --------------------------------------------------
 
