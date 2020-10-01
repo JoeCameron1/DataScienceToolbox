@@ -1,6 +1,6 @@
 # Author = Joseph Cameron
-# overallEnergyAverage.py
-# Gives average daily energy demand curves for all aggregated users
+# monthlyOverallEnergyAverage.py
+# Presents the average hourly energy demand within the timeframe of each month for all users (all .csv files in directory).
 
 # USAGE
 # Boxplot = python monthlyOverallEnergyAverage.py -b
