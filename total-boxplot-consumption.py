@@ -1,11 +1,11 @@
 # Author = Joseph Cameron
 # total-boxplot-consumption.py
-# Displays a boxplot of energy consumption for every month grouped by hour, day, week and month.
+# Displays a boxplot of energy consumption for every month grouped by hour, day or week.
 
 # USAGE
-# Hourly Line Graph = python total-boxplot-consumption.py -d (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
-# Daily Line Graph = python total-boxplot-consumption.py -g (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
-# Weekly Line Graph = python total-boxplot-consumption.py -w (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
+# Hourly Boxplot = python total-boxplot-consumption.py -d (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
+# Daily Boxplot = python total-boxplot-consumption.py -g (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
+# Weekly Boxplot = python total-boxplot-consumption.py -w (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
 
 # --------------------------------------------------
 
@@ -13,7 +13,7 @@
 
 import argparse
 
-parser = argparse.ArgumentParser(description='Display a sum of energy consumption over every hour within a day, every day, every week or every month.')
+parser = argparse.ArgumentParser(description='Display a sum of energy consumption over every hour within a day, every day or every week.')
 group = parser.add_mutually_exclusive_group()
 group.add_argument('-d', '--default', action='store_true', help='Display for every hour.')
 group.add_argument('-g', '--giorno', action='store_true', help='Display for every day.')
