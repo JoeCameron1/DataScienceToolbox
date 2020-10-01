@@ -1,5 +1,8 @@
 # Author = Joseph Cameron
-# formatCSV.py removes strings from IDEAL .csv files
+# formatCSV.py prints every IDEAL .csv file as a string
+# Useful, as the strings can copy/pasted elsewhere easily, and later re-formatted.
+
+# USAGE: python formatCSV.py
 
 import pandas as pd
 
