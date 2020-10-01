@@ -3,8 +3,12 @@
 # Presents the average daily energy demand for a single user (smoothed data)
 
 # USAGE
-# Hourly Average and Boxplot = python smoothedDailyEnergyAverage.py -d -b data.csv
-# Also saves csv data of results
+# Hourly Boxplot = python smoothedDailyEnergyAverage.py -d -b data.csv (Also saves csv data of results)
+# Hourly Line Graph = python smoothedDailyEnergyAverage.py -d -n data.csv
+# Boxplot for every minute = python smoothedDailyEnergyAverage.py -m -b data.csv
+# Line Graph for every minute = python smoothedDailyEnergyAverage.py -m -n data.csv
+# Boxplot for every second = python smoothedDailyEnergyAverage.py -s -b data.csv
+# Line Graph for every second = python smoothedDailyEnergyAverage.py -s -n data.csv
 
 # Note!!!!
 # All other argument combinations will only save figures and not .csv data
