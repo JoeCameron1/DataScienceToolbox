@@ -1,9 +1,9 @@
 # Author = Joseph Cameron
-# preprocessElectric.py
-# Saves electric csv data in Watt Hours instead of Watts.
+# preprocessElectric-Hour.py
+# Saves electric csv data in Watt Hours instead of Watts. Rounded to the nearest hour.
 
 # USAGE
-# python preprocessElectric.py electricityData.csv
+# python preprocessElectric-Hour.py electricityData.csv
 
 # --------------------------------------------------
 
@@ -36,9 +36,9 @@ elec_data['Time'] = elec_data['Datetime'].map(lambda x: datetime.strptime(str(x)
 # Multiply all sensor values by (1/12) to get Wh instead of W
 elec_data["Sensor Value"] = elec_data["Sensor Value"] * (1.0/12)
 
-# Round the Datetimes to the nearest 30 minutes
+# Round the Datetimes to the nearest hour
 elec_data['Time'] = elec_data['Time'].dt.round('H')
-# Sum gas data within 30 minute buckets
+# Sum gas data within 60 minute buckets
 elec_data = elec_data.reset_index().set_index('Time')
 elec_data = elec_data.resample('60T').sum()
 
