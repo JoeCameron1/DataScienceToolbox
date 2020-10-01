@@ -26,13 +26,13 @@ Additionally, the table below quickly summarises the purpose and correct usage o
 | formatCSV.py                    | Prints each and every raw IDEAL data .csv file within a directory as a string. | Navigate to directory with .csv files and type 'python formatCSV.py' |
 | monthlyEnergyAverage.py         | Same as dailyEnergyAverage.py, except this script also saves the average values within the timeframe of each month (rather than the whole range of available datetime data) in a separate .csv file in a directory called 'MonthlyAveEnergyCSV/'. | python monthlyEnergyAverage.py [-d/-m/-s] [-b/-n] data.csv |
 | monthlyOverallEnergyAverage.py  | Same as monthlyEnergyAverage.py, except this script saves the average hourly values (for each month's timeframe) from all .csv files in a directory rather than just a single .csv file. | python monthlyOverallEnergyAverage.py [-b/-n] |
-| overallEnergyAverage.py         |  |  |
-| preprocessElectric-30.py        |  |  |
-| preprocessElectric-Hour.py      |  |  |
-| preprocessElectric.py           |  |  |
-| preprocessGas-30.py             |  |  |
-| preprocessGas-Hour.py           |  |  |
-| preprocessGas.py                |  |  |
+| overallEnergyAverage.py         | Gives average daily energy demand curves from all aggregated users. Uses data given by the dailyEnergyAverage.py script. | python overallEnergyAverage.py [-b/-n] |
+| preprocessElectric-30.py        | Saves electricity data in Watt Hours instead of Watts (as it was originally measured for the IDEAL dataset). Rounded to the nearest 30 minutes. | python preprocessElectric-30.py electricityData.csv |
+| preprocessElectric-Hour.py      | Saves electricity data in Watt Hours instead of Watts (as it was originally measured for the IDEAL dataset). Rounded to the nearest hour. | python preprocessElectric-Hour.py electricityData.csv |
+| preprocessElectric.py           | Saves electricity data in Watt Hours instead of Watts (as it was originally measured for the IDEAL dataset). No rounding. | python preprocessElectric.py electricityData.csv |
+| preprocessGas-30.py             | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. Rounded to the nearest 30 minutes. | python preprocessGas-30.py gasData.csv |
+| preprocessGas-Hour.py           | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. Rounded to the nearest hour. | python preprocessGas-Hour.py gasData.csv |
+| preprocessGas.py                | Saves clean gas data with boiler efficiency and coefficient of performance (COP) values accounted for. No rounding. | python preprocessGas.py gasData.csv |
 | seasonalAverage.py              |  |  |
 | showFig.py                      |  |  |
 | showTimeGaps.py                 |  |  |
