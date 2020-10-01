@@ -5,6 +5,10 @@
 # USAGE
 # Hourly Boxplot = python dailyAverage.py -d -b data.csv
 # Hourly Line Graph = python dailyAverage.py -d -n data.csv
+# Boxplot for every minute = python dailyAverage.py -m -b data.csv
+# Line Graph for every minute = python dailyAverage.py -m -n data.csv
+# Boxplot for every second = python dailyAverage.py -s -b data.csv
+# Line Graph for every second = python dailyAverage.py -s -n data.csv
 
 # --------------------------------------------------
 
