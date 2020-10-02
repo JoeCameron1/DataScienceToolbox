@@ -9,6 +9,30 @@ Although written with a certain dataset in mind, the core process of analysis an
 
 ---------------
 
+Below are some examples of the figures produced by some of the scripts in this repository:
+
+| An example of a figure produced by dailyEnergyAverage.py |
+|------|
+|![dailyEnergyAverage.py Example Figure](/ExampleFigures/dailyEnergyAverageExample.png)| 
+
+| An example of a figure produced by showTimeGaps.py |
+|------|
+|![showTimeGaps.py Example Figure](/ExampleFigures/showTimeGapsExample.png)|
+
+| An example of a figure produced by seasonalAverage.py |
+|------|
+|![seasonalAverage.py Example Figure](/ExampleFigures/seasonalAverageExample.png)|
+
+| An example of a figure produced by consumption.py |
+|------|
+|![consumption.py Example Figure](/ExampleFigures/consumptionExample.png)|
+
+| An example of a figure produced by total-robust-consumption.py |
+|------|
+|![total-robust-consumption.py Example Figure](/ExampleFigures/total-robust-consumptionExample.png)|
+
+---------------
+
 Every file is documented with its own description and correct use in the command line.
 Additionally, the table below quickly summarises the purpose and correct usage of each file:
 | File                            | Description | Usage |
