@@ -1,6 +1,6 @@
 # Author = Joseph Cameron
 # total-boxplot-consumption.py
-# Displays a boxplot of energy consumption for every month grouped by hour, day or week.
+# Displays a boxplot of energy consumption for every month, where data is resampled by hour, day or week.
 
 # USAGE
 # Hourly Boxplot = python total-boxplot-consumption.py -d (Clean-Gas-Data/data.csv or Clean-Electric-Data/data.csv)
@@ -13,7 +13,7 @@
 
 import argparse
 
-parser = argparse.ArgumentParser(description='Display a sum of energy consumption over every hour within a day, every day or every week.')
+parser = argparse.ArgumentParser(description='Display a boxplot of energy consumption for every month where data is resampled over every hour, day or week.')
 group = parser.add_mutually_exclusive_group()
 group.add_argument('-d', '--default', action='store_true', help='Display for every hour.')
 group.add_argument('-g', '--giorno', action='store_true', help='Display for every day.')
@@ -68,7 +68,7 @@ xlabel = "Default x-axis label"
 if args.default:
     gas_data = gas_data.resample('H').sum()
     gasConsumption = gas_data.set_index(gas_data.index).groupby([gas_data.index.year, gas_data.index.month]).boxplot(subplots=False, showmeans=True)
-    xlabel = "hours during the day 0-23"
+    xlabel = "hours"
 # DAY
 elif args.giorno:
     gas_data = gas_data.resample('D').sum()
@@ -83,7 +83,7 @@ elif args.week:
 else:
     gas_data = gas_data.resample('H').sum()
     gasConsumption = gas_data.set_index(gas_data.index).groupby([gas_data.index.year, gas_data.index.month]).boxplot(subplots=False, showmeans=True)
-    xlabel = "hours during the day 0-23"
+    xlabel = "hours"
 
 # --------------------------------------------------
 
@@ -94,7 +94,7 @@ plt.gcf().autofmt_xdate()
 plt.ylabel("Watt Hours")
 
 # X-Axis Label
-plt.xlabel("Time (in " + xlabel + ")")
+plt.xlabel("Time [year,month] (data resampled in " + xlabel + ")")
 
 # Title of Plot
 plt.title("Energy Consumption Boxplot")
