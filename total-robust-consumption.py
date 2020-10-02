@@ -83,9 +83,9 @@ xlabel = "Default x-axis label"
 # Resample by hour, day, week or month and plot the sum
 # HOUR
 if args.default:
-    gasConsumption = gas_data.resample('H').sum().plot()
-    electricConsumption = elec_data.resample('H').sum().plot()
-    xlabel = "hours during the day 0-23"
+    gasConsumption = gas_data.resample('H').sum()
+    electricConsumption = elec_data.resample('H').sum()
+    xlabel = "hours"
 # DAY
 elif args.giorno:
     gasConsumption = gas_data.resample('D').sum()
@@ -93,19 +93,19 @@ elif args.giorno:
     xlabel = "days"
 # WEEK
 elif args.week:
-    gasConsumption = gas_data.resample('W').sum().plot()
-    electricConsumption = elec_data.resample('W').sum().plot()
+    gasConsumption = gas_data.resample('W').sum()
+    electricConsumption = elec_data.resample('W').sum()
     xlabel = "weeks"
 # MONTH
 elif args.month:
-    gasConsumption = gas_data.resample('M').sum().plot()
-    electricConsumption = elec_data.resample('M').sum().plot()
+    gasConsumption = gas_data.resample('M').sum()
+    electricConsumption = elec_data.resample('M').sum()
     xlabel = "months"
 # DEFAULT = HOUR
 else:
-    gasConsumption = gas_data.resample('H').sum().plot()
-    electricConsumption = elec_data.resample('H').sum().plot()
-    xlabel = "hours during the day 0-23"
+    gasConsumption = gas_data.resample('H').sum()
+    electricConsumption = elec_data.resample('H').sum()
+    xlabel = "hours"
 
 # --------------------------------------------------
 
