@@ -3,10 +3,10 @@
 # Displays total energy consumption sum over a dataset's lifetime for every given hour during a day, given day, given week and given month.
 
 # USAGE
-# Hourly Line Graph = python dailyAverage.py -d data.csv
-# Daily Line Graph = python dailyAverage.py -g data.csv
-# Weekly Line Graph = python dailyAverage.py -w data.csv
-# Monthly Line Graph = python dailyAverage.py -m data.csv
+# Hourly Line Graph = python consumption.py -d data.csv
+# Daily Line Graph = python consumption.py -g data.csv
+# Weekly Line Graph = python consumption.py -w data.csv
+# Monthly Line Graph = python consumption.py -m data.csv
 
 # --------------------------------------------------
 
