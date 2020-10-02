@@ -58,25 +58,26 @@ ideal_data['Time'] = ideal_data['Datetime'].map(lambda x: datetime.strptime(str(
 ideal_data = ideal_data.set_index(ideal_data['Time'])
 
 # Create the figure
+# Y-Axis label can represent appropriate units for the data. Eg. Watt Hours for gas data.
 fig = plt.figure()
 
 ax1 = fig.add_subplot(221)
-ax1.set_ylabel('Temperature (0.1 Celsius)')
+ax1.set_ylabel('Watt Hours')
 ax1.set_xlabel('Hours')
 ax1.set_title('November - March')
 
 ax2 = fig.add_subplot(222)
-ax2.set_ylabel('Temperature (0.1 Celsius)')
+ax2.set_ylabel('Watt Hours')
 ax2.set_xlabel('Hours')
 ax2.set_title('April - May')
 
 ax3 = fig.add_subplot(223)
-ax3.set_ylabel('Temperature (0.1 Celsius)')
+ax3.set_ylabel('Watt Hours')
 ax3.set_xlabel('Hours')
 ax3.set_title('June - August')
 
 ax4 = fig.add_subplot(224)
-ax4.set_ylabel('Temperature (0.1 Celsius)')
+ax4.set_ylabel('Watt Hours')
 ax4.set_xlabel('Hours')
 ax4.set_title('September - October')
 
